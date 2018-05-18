@@ -1,0 +1,10 @@
+<seelog minlevel="debug">
+    <outputs formatid="common">
+    	<buffered size="10000" flushperiod="1000" formatid="common">
+        	<rollingfile type="date" filename="/data/apps/b8/b8push/b8pushserver/logs/b8push.log" datepattern="2006-01-02" />
+        </buffered>
+    </outputs>
+    <formats>
+        <format id="common" format="%LEV %Date/%Time %Msg%n" />
+    </formats>
+</seelog>
